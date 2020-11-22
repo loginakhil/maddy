@@ -84,6 +84,7 @@ func parseEntry(line string) (*Entry, error) {
 
 func Lookup(name string) (*Entry, error) {
 	entries, err := Read()
+	
 	if err != nil {
 		return nil, err
 	}
